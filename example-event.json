@@ -1,0 +1,38 @@
+{
+    "Records": [
+      {
+        "eventVersion": "2.1",
+        "eventSource": "aws:s3",
+        "awsRegion": "eu-west-1",
+        "eventTime": "2021-11-22T15:39:14.056Z",
+        "eventName": "ObjectCreated:Put",
+        "userIdentity": {
+          "principalId": "A2LDBRMEV24PAS"
+        },
+        "requestParameters": {
+          "sourceIPAddress": "81.97.172.153"
+        },
+        "responseElements": {
+          "x-amz-request-id": "JTMPYHE2PS40AA3H",
+          "x-amz-id-2": "V0XLxEexkutNgiBrx5mtIdErPTqKMB1er9nMJ8tiPHyzgkSYyedlo7JA8/W9hH7k/T9ykbFtNjloqPGB0CAzSYuxi2K5V3uy"
+        },
+        "s3": {
+          "s3SchemaVersion": "1.0",
+          "configurationId": "0fa11b50-7219-4ebb-ae66-04961e0688c6",
+          "bucket": {
+            "name": "robrendellwebsite-generate-sudoku-json",
+            "ownerIdentity": {
+              "principalId": "A2LDBRMEV24PAS"
+            },
+            "arn": "arn:aws:s3:::robrendellwebsite-generate-sudoku-json"
+          },
+          "object": {
+            "key": "84146226-f1f7-4f22-b6c5-9dff72a03bd8.json",
+            "size": 23,
+            "eTag": "ad22906b139d24a49a8884e449fffb34",
+            "sequencer": "00619BB9A207C5606E"
+          }
+        }
+      }
+    ]
+  }

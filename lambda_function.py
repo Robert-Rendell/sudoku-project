@@ -37,7 +37,7 @@ def lambda_handler(event, context):
     params = json.dumps(body).encode('utf8')
     # using data parameter makes it POST
     req = urllib.request.Request(
-        "https://robrendellwebsite.herokuapp.com/sudoku/add/callback",
+        os.environ.get('SUDOKU_GEN_CALLBACK'),
         data=params,
         headers={'content-type': 'application/json'}
     )

@@ -4,7 +4,6 @@ from copy import deepcopy
 class SudokuGenerator(object):
     """
     The board is 9x9 and is generated using a brute force algorithm.
-    The difficulty is decided at the end when we have a solution, some numbers are removed
     """
     board_size = 9
     # Difficulties is the number of clues

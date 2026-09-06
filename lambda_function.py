@@ -2,7 +2,7 @@ import json
 import boto3
 import os
 from sudoku import SudokuGenerator, CouldBeIn
-import http.client, urllib.parse
+import urllib.request
 
 def lambda_handler(event, context):
     record = event['Records'][0]
@@ -50,10 +50,6 @@ def lambda_handler(event, context):
     }
     
 def getJsonBodyFromS3Object(bucket, key):
-    s3 = boto3.client(
-        's3',
-        aws_access_key_id=os.environ.get('ACCESS_KEY'),
-        aws_secret_access_key=os.environ.get('SECRET_KEY'),
-    )
+    s3 = boto3.client('s3')
     obj = s3.get_object(Bucket=bucket, Key=key)
     return json.loads(obj['Body'].read().decode('utf-8'))
